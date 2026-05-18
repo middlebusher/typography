@@ -1,0 +1,185 @@
+{
+  "typography": {
+    "fontFamilies": {
+      "regular": {
+        "$value": "Inter Variable",
+        "$type": "fontFamily",
+        "fallbacks": "SF Pro Display, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif"
+      },
+      "serifDisplay": {
+        "$value": "Tiempos Headline",
+        "$type": "fontFamily",
+        "fallbacks": "ui-serif, Georgia, Cambria, Times New Roman, serif"
+      },
+      "monospace": {
+        "$value": "Berkeley Mono",
+        "$type": "fontFamily",
+        "fallbacks": "ui-monospace, SF Mono, Menlo, monospace"
+      }
+    },
+    "fontWeights": {
+      "light": { "$value": 300, "$type": "fontWeight" },
+      "normal": { "$value": 400, "$type": "fontWeight" },
+      "medium": { "$value": 510, "$type": "fontWeight" },
+      "semibold": { "$value": 590, "$type": "fontWeight" },
+      "bold": { "$value": 680, "$type": "fontWeight" }
+    },
+    "titles": {
+      "1": {
+        "fontSize": { "$value": "17px", "$type": "dimension" },
+        "fontSizeRem": "1.0625rem",
+        "fontWeight": { "$value": 590, "$type": "fontWeight" },
+        "lineHeight": { "$value": 1.4, "$type": "number" },
+        "letterSpacing": { "$value": "-1.2%", "$type": "dimension" },
+        "letterSpacingEm": "-0.012em"
+      },
+      "2": {
+        "fontSize": { "$value": "20px", "$type": "dimension" },
+        "fontSizeRem": "1.25rem",
+        "fontWeight": { "$value": 590, "$type": "fontWeight" },
+        "lineHeight": { "$value": 1.33, "$type": "number" },
+        "letterSpacing": { "$value": "-1.2%", "$type": "dimension" },
+        "letterSpacingEm": "-0.012em"
+      },
+      "3": {
+        "fontSize": { "$value": "24px", "$type": "dimension" },
+        "fontSizeRem": "1.5rem",
+        "fontWeight": { "$value": 590, "$type": "fontWeight" },
+        "lineHeight": { "$value": 1.33, "$type": "number" },
+        "letterSpacing": { "$value": "-1.2%", "$type": "dimension" },
+        "letterSpacingEm": "-0.012em"
+      },
+      "4": {
+        "fontSize": { "$value": "32px", "$type": "dimension" },
+        "fontSizeRem": "2rem",
+        "fontWeight": { "$value": 590, "$type": "fontWeight" },
+        "lineHeight": { "$value": 1.125, "$type": "number" },
+        "letterSpacing": { "$value": "-2.2%", "$type": "dimension" },
+        "letterSpacingEm": "-0.022em"
+      },
+      "5": {
+        "fontSize": { "$value": "40px", "$type": "dimension" },
+        "fontSizeRem": "2.5rem",
+        "fontWeight": { "$value": 590, "$type": "fontWeight" },
+        "lineHeight": { "$value": 1.1, "$type": "number" },
+        "letterSpacing": { "$value": "-2.2%", "$type": "dimension" },
+        "letterSpacingEm": "-0.022em"
+      },
+      "6": {
+        "fontSize": { "$value": "48px", "$type": "dimension" },
+        "fontSizeRem": "3rem",
+        "fontWeight": { "$value": 590, "$type": "fontWeight" },
+        "lineHeight": { "$value": 1.0, "$type": "number" },
+        "letterSpacing": { "$value": "-2.2%", "$type": "dimension" },
+        "letterSpacingEm": "-0.022em"
+      },
+      "7": {
+        "fontSize": { "$value": "56px", "$type": "dimension" },
+        "fontSizeRem": "3.5rem",
+        "fontWeight": { "$value": 590, "$type": "fontWeight" },
+        "lineHeight": { "$value": 1.1, "$type": "number" },
+        "letterSpacing": { "$value": "-2.2%", "$type": "dimension" },
+        "letterSpacingEm": "-0.022em"
+      },
+      "8": {
+        "fontSize": { "$value": "64px", "$type": "dimension" },
+        "fontSizeRem": "4rem",
+        "fontWeight": { "$value": 590, "$type": "fontWeight" },
+        "lineHeight": { "$value": 1.06, "$type": "number" },
+        "letterSpacing": { "$value": "-2.2%", "$type": "dimension" },
+        "letterSpacingEm": "-0.022em"
+      },
+      "9": {
+        "fontSize": { "$value": "72px", "$type": "dimension" },
+        "fontSizeRem": "4.5rem",
+        "fontWeight": { "$value": 590, "$type": "fontWeight" },
+        "lineHeight": { "$value": 1.0, "$type": "number" },
+        "letterSpacing": { "$value": "-2.2%", "$type": "dimension" },
+        "letterSpacingEm": "-0.022em"
+      }
+    },
+    "text": {
+      "large": {
+        "fontSize": { "$value": "17px", "$type": "dimension" },
+        "fontSizeRem": "1.0625rem",
+        "fontWeight": { "$value": 400, "$type": "fontWeight" },
+        "lineHeight": { "$value": 1.6, "$type": "number" },
+        "letterSpacing": { "$value": "0%", "$type": "dimension" },
+        "letterSpacingEm": "0"
+      },
+      "regular": {
+        "fontSize": { "$value": "15px", "$type": "dimension" },
+        "fontSizeRem": "0.9375rem",
+        "fontWeight": { "$value": 400, "$type": "fontWeight" },
+        "lineHeight": { "$value": 1.6, "$type": "number" },
+        "letterSpacing": { "$value": "-1.1%", "$type": "dimension" },
+        "letterSpacingEm": "-0.011em"
+      },
+      "small": {
+        "fontSize": { "$value": "14px", "$type": "dimension" },
+        "fontSizeRem": "0.875rem",
+        "fontWeight": { "$value": 400, "$type": "fontWeight" },
+        "lineHeight": { "$value": 1.5, "$type": "number" },
+        "letterSpacing": { "$value": "-1.3%", "$type": "dimension" },
+        "letterSpacingEm": "-0.013em"
+      },
+      "mini": {
+        "fontSize": { "$value": "13px", "$type": "dimension" },
+        "fontSizeRem": "0.8125rem",
+        "fontWeight": { "$value": 400, "$type": "fontWeight" },
+        "lineHeight": { "$value": 1.5, "$type": "number" },
+        "letterSpacing": { "$value": "-1.0%", "$type": "dimension" },
+        "letterSpacingEm": "-0.01em"
+      },
+      "micro": {
+        "fontSize": { "$value": "12px", "$type": "dimension" },
+        "fontSizeRem": "0.75rem",
+        "fontWeight": { "$value": 400, "$type": "fontWeight" },
+        "lineHeight": { "$value": 1.4, "$type": "number" },
+        "letterSpacing": { "$value": "0%", "$type": "dimension" },
+        "letterSpacingEm": "0"
+      },
+      "tiny": {
+        "fontSize": { "$value": "10px", "$type": "dimension" },
+        "fontSizeRem": "0.625rem",
+        "fontWeight": { "$value": 400, "$type": "fontWeight" },
+        "lineHeight": { "$value": 1.5, "$type": "number" },
+        "letterSpacing": { "$value": "-1.5%", "$type": "dimension" },
+        "letterSpacingEm": "-0.015em"
+      }
+    }
+  },
+  "color": {
+    "text": {
+      "dark": {
+        "primary": { "$value": "#f7f8f8", "$type": "color" },
+        "secondary": { "$value": "#d0d6e0", "$type": "color" },
+        "tertiary": { "$value": "#8a8f98", "$type": "color" },
+        "quaternary": { "$value": "#62666d", "$type": "color" },
+        "link": { "$value": "#828fff", "$type": "color" },
+        "linkHover": { "$value": "#ffffff", "$type": "color" }
+      },
+      "light": {
+        "primary": { "$value": "#282a30", "$type": "color" },
+        "secondary": { "$value": "#3c4149", "$type": "color" },
+        "tertiary": { "$value": "#6f6e77", "$type": "color" },
+        "quaternary": { "$value": "#86848d", "$type": "color" },
+        "link": { "$value": "#7070ff", "$type": "color" },
+        "linkHover": { "$value": "#282a30", "$type": "color" }
+      },
+      "glass": {
+        "primary": { "$value": "#f7f8f8", "$type": "color" },
+        "secondary": { "$value": "#b4bcd0", "$type": "color" },
+        "tertiary": { "$value": "#b4bcd099", "$type": "color" },
+        "quaternary": { "$value": "#b4bcd066", "$type": "color" }
+      }
+    },
+    "brand": {
+      "dark": { "$value": "#5e6ad2", "$type": "color" },
+      "light": { "$value": "#7070ff", "$type": "color" },
+      "accent": { "$value": "#7170ff", "$type": "color" },
+      "accentHoverDark": { "$value": "#828fff", "$type": "color" },
+      "accentHoverLight": { "$value": "#8989f0", "$type": "color" }
+    }
+  }
+}
