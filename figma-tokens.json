@@ -10,7 +10,9 @@
       "color/cui/amber/dark",
       "color/cui/amber/light",
       "color/cui/red/dark",
-      "color/cui/red/light"
+      "color/cui/red/light",
+      "color/cui/secondary/dark",
+      "color/cui/secondary/light"
     ]
   },
   "$themes": [],
@@ -630,6 +632,130 @@
     },
     "12": {
       "$value": "#5c271f",
+      "$type": "color",
+      "$description": "High-contrast text"
+    }
+  },
+  "color/cui/secondary/dark": {
+    "1": {
+      "$value": "#0e0f16",
+      "$type": "color",
+      "$description": "App bg"
+    },
+    "2": {
+      "$value": "#131521",
+      "$type": "color",
+      "$description": "Subtle bg"
+    },
+    "3": {
+      "$value": "#1a1c37",
+      "$type": "color",
+      "$description": "Component bg"
+    },
+    "4": {
+      "$value": "#21234d",
+      "$type": "color",
+      "$description": "Hover bg"
+    },
+    "5": {
+      "$value": "#292c5f",
+      "$type": "color",
+      "$description": "Active bg"
+    },
+    "6": {
+      "$value": "#35396e",
+      "$type": "color",
+      "$description": "Subtle border"
+    },
+    "7": {
+      "$value": "#464b89",
+      "$type": "color",
+      "$description": "Element border"
+    },
+    "8": {
+      "$value": "#5e64aa",
+      "$type": "color",
+      "$description": "border-secondary \u00b7 Hovered border"
+    },
+    "9": {
+      "$value": "#838bff",
+      "$type": "color",
+      "$description": "bg-secondary \u00b7 Solid fill"
+    },
+    "10": {
+      "$value": "#96a0f2",
+      "$type": "color",
+      "$description": "Hovered solid"
+    },
+    "11": {
+      "$value": "#aeb8fe",
+      "$type": "color",
+      "$description": "text-secondary \u00b7 Accessible text"
+    },
+    "12": {
+      "$value": "#e1e6ff",
+      "$type": "color",
+      "$description": "High-contrast text"
+    }
+  },
+  "color/cui/secondary/light": {
+    "1": {
+      "$value": "#fcfcff",
+      "$type": "color",
+      "$description": "App bg"
+    },
+    "2": {
+      "$value": "#f5f7ff",
+      "$type": "color",
+      "$description": "Subtle bg"
+    },
+    "3": {
+      "$value": "#eaeeff",
+      "$type": "color",
+      "$description": "Component bg"
+    },
+    "4": {
+      "$value": "#dfe5ff",
+      "$type": "color",
+      "$description": "Hover bg"
+    },
+    "5": {
+      "$value": "#d2daff",
+      "$type": "color",
+      "$description": "Active bg"
+    },
+    "6": {
+      "$value": "#c3ccff",
+      "$type": "color",
+      "$description": "Subtle border"
+    },
+    "7": {
+      "$value": "#b1baff",
+      "$type": "color",
+      "$description": "Element border"
+    },
+    "8": {
+      "$value": "#9aa3f3",
+      "$type": "color",
+      "$description": "border-secondary \u00b7 Hovered border"
+    },
+    "9": {
+      "$value": "#838bff",
+      "$type": "color",
+      "$description": "bg-secondary \u00b7 Solid fill"
+    },
+    "10": {
+      "$value": "#7b83d7",
+      "$type": "color",
+      "$description": "Hovered solid"
+    },
+    "11": {
+      "$value": "#5459ab",
+      "$type": "color",
+      "$description": "text-secondary \u00b7 Accessible text"
+    },
+    "12": {
+      "$value": "#1c1e4a",
       "$type": "color",
       "$description": "High-contrast text"
     }
