@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Principles — CodeRabbit Brand System</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap">
+<link rel="stylesheet" href="styles.css?v=20260721-1">
+</head>
+<body>
+
+<nav class="left-nav">
+  <div class="left-nav-brand"><span>CR</span> Brand System</div>
+  <div class="left-nav-pages">
+    <a class="left-nav-page has-children" aria-expanded="false" href="marketing.html">Marketing</a>
+    <a class="left-nav-page has-children" aria-expanded="false" href="typography.html">Typography</a>
+    <a class="left-nav-page has-children" aria-expanded="false" href="colors.html">Colors</a>
+    <a class="left-nav-page has-children" aria-expanded="false" href="spacing.html">Spacing</a>
+    <a class="left-nav-page has-children" aria-expanded="false" href="effects.html">Effects</a>
+    <a class="left-nav-page active has-children" href="principles.html" aria-current="page" aria-expanded="true">Principles</a>
+    <div class="left-nav-sections">
+      <a class="left-nav-section-link" href="#principles">Design Principles</a>
+      <a class="left-nav-section-link" href="#figma-ref">Figma Reference</a>
+    </div>
+  </div>
+</nav>
+
+
+<main class="main-content">
+
+<header class="page-header">
+  <div class="overline">CodeRabbit Brand System</div>
+  <h1 class="page-title">Principles</h1>
+  <p class="page-subtitle">Design philosophy, values, and Figma setup reference.</p>
+</header>
+
+<!-- ─── Design Principles ─────────────────────────────────────────── -->
+<section class="section" id="principles">
+  <div class="section-label">Design Principles</div>
+
+  <div class="principles-grid">
+    <div class="principle-card">
+      <div class="principle-number">01</div>
+      <div class="principle-title">Clarity over cleverness</div>
+      <div class="principle-desc">Every element should communicate its purpose instantly. Code review is already cognitively dense — the UI must reduce load, not add to it. Decorative complexity is waste.</div>
+    </div>
+    <div class="principle-card">
+      <div class="principle-number">02</div>
+      <div class="principle-title">Signal, not noise</div>
+      <div class="principle-desc">Orange is reserved for actions that matter. Status colors carry meaning. Use emphasis sparingly so that when something needs attention, it gets it — not lost in a wall of highlights.</div>
+    </div>
+    <div class="principle-card">
+      <div class="principle-number">03</div>
+      <div class="principle-title">Speed as a feature</div>
+      <div class="principle-desc">Developers measure in keystrokes. Transitions must feel instantaneous — entrances under 200ms, exits under 150ms. Never let animation delay a workflow.</div>
+    </div>
+    <div class="principle-card">
+      <div class="principle-number">04</div>
+      <div class="principle-title">Precision in type</div>
+      <div class="principle-desc">Tight letter-spacing at display size, open tracking at caption size. Line height that breathes at body scale, compressed at hero scale. Typography is not decoration — it is the product.</div>
+    </div>
+    <div class="principle-card">
+      <div class="principle-number">05</div>
+      <div class="principle-title">Dark-first, not dark-only</div>
+      <div class="principle-desc">The mauve scale is perceptually balanced across light and dark. Design in dark, verify in light. Semantic tokens abstract away the theme — components should never hard-code scale steps.</div>
+    </div>
+    <div class="principle-card">
+      <div class="principle-number">06</div>
+      <div class="principle-title">Composable tokens</div>
+      <div class="principle-desc">No component should reference a raw scale value like <code>mauve-7</code> directly. All color, spacing, and shadow decisions go through the semantic token layer — this is what makes theming possible.</div>
+    </div>
+    <div class="principle-card">
+      <div class="principle-number">07</div>
+      <div class="principle-title">One brand, distinct systems</div>
+      <div class="principle-desc">Carrot UI owns product interaction semantics. Marketing owns cream-led editorial expression. Both inherit shared foundations, but neither copies the other’s role tokens.</div>
+    </div>
+    <div class="principle-card">
+      <div class="principle-number">08</div>
+      <div class="principle-title">Theme parity</div>
+      <div class="principle-desc">Cream-light and ink-dark marketing variants must preserve hierarchy, meaning, and contrast. A theme is not a recolor if the story breaks when the canvas changes.</div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ─── Figma Reference ──────────────────────────────────────────── -->
+<section class="section" id="figma-ref">
+  <div class="section-label">Figma Reference — Letter Spacing Conversion</div>
+
+  <div class="type-row">
+    <div class="type-sample"><span class="text-regular" style="color: var(--color-text-tertiary);">Figma uses <code>%</code>, not <code>em</code>. Multiply the em value × 100. Titles track tight (negative); body and small copy track open (positive).</span></div>
+    <div class="type-meta">
+      <div class="meta-row">
+        <span class="meta-pill">−0.022em = −2.2% · titles 4–9</span>
+        <span class="meta-pill">−0.012em = −1.2% · titles 1–3</span>
+      </div>
+      <div class="meta-row">
+        <span class="meta-pill">0em = 0% · text-large</span>
+        <span class="meta-pill">+0.005em = +0.5% · text-regular</span>
+        <span class="meta-pill">+0.01em = +1.0% · text-small</span>
+      </div>
+      <div class="meta-row">
+        <span class="meta-pill">+0.015em = +1.5% · text-mini</span>
+        <span class="meta-pill">+0.02em = +2.0% · text-micro</span>
+        <span class="meta-pill">+0.03em = +3.0% · text-tiny</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ─── Footer ────────────────────────────────────────────────────── -->
+<footer class="site-footer">
+  <div class="footer-brand"><span style="color:#ff570a;">CR</span> Design System</div>
+  <div class="footer-meta">Geist Variable · Hack Nerd Font · OKLCH Mauve Scale · 4px Grid</div>
+</footer>
+
+</body>
+
+
+<footer class="site-footer">
+  <div class="footer-brand"><span>CR</span> Design System</div>
+  <div class="footer-meta">Geist Variable · Hack Nerd Font · OKLCH Mauve Scale · 4px Grid</div>
+</footer>
+
+</main>
+
+
+<script>
+(function() {
+  var links = document.querySelectorAll('.left-nav-section-link');
+  var sections = [];
+  links.forEach(function(a) {
+    var id = a.getAttribute('href').replace('#','');
+    var el = document.getElementById(id);
+    if (el) sections.push({ el: el, a: a });
+  });
+  if (!sections.length) return;
+  if (sections[0]) sections[0].a.classList.add('active');
+  var io = new IntersectionObserver(function(entries) {
+    entries.forEach(function(entry) {
+      if (!entry.isIntersecting) return;
+      links.forEach(function(l) { l.classList.remove('active'); });
+      var match = sections.find(function(s) { return s.el === entry.target; });
+      if (match) match.a.classList.add('active');
+    });
+  }, { rootMargin: '-10% 0px -80% 0px' });
+  sections.forEach(function(s) { io.observe(s.el); });
+})();
+</script>
+</body>
+</html>

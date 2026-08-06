@@ -1,5 +1,26 @@
 {
-  "$themes": [],
+  "$themes": [
+    {
+      "id": "marketing-cream-light",
+      "name": "Marketing / Cream Light",
+      "selectedTokenSets": {
+        "marketing-foundation": "enabled",
+        "marketing-light": "enabled",
+        "marketing-typography": "enabled",
+        "marketing-spacing": "enabled"
+      }
+    },
+    {
+      "id": "marketing-ink-dark",
+      "name": "Marketing / Ink Dark",
+      "selectedTokenSets": {
+        "marketing-foundation": "enabled",
+        "marketing-dark": "enabled",
+        "marketing-typography": "enabled",
+        "marketing-spacing": "enabled"
+      }
+    }
+  ],
   "$metadata": {
     "tokenSetOrder": [
       "mauve-dark",
@@ -13,8 +34,87 @@
       "red-dark",
       "red-light",
       "secondary-dark",
-      "secondary-light"
+      "secondary-light",
+      "marketing-foundation",
+      "marketing-light",
+      "marketing-dark",
+      "marketing-typography",
+      "marketing-spacing"
     ]
+  },
+  "marketing-foundation": {
+    "color": {
+      "ink": { "value": "{mauve-dark.step-1}", "type": "color", "description": "Alias of the darkest mauve for dark canvases and light-theme text" },
+      "cream": { "value": "#eee8e3", "type": "color", "description": "Canonical warm marketing canvas" },
+      "paper": { "value": "#f8f7f2", "type": "color", "description": "Quiet inset and print surface" },
+      "white": { "value": "#ffffff", "type": "color", "description": "Raised surface on cream" },
+      "orange": { "value": "#ff570a", "type": "color", "description": "Primary brand emphasis" },
+      "mint": { "value": "#25e2a8", "type": "color", "description": "Positive outcomes and supporting proof" },
+      "periwinkle": { "value": "#838bff", "type": "color", "description": "Systems, methods, and contextual emphasis" },
+      "yellow": { "value": "#f0df22", "type": "color", "description": "Rare attention highlight" }
+    },
+    "font": {
+      "sans": { "value": "Geist Variable", "type": "fontFamilies" },
+      "mono": { "value": "Hack", "type": "fontFamilies" }
+    }
+  },
+  "marketing-light": {
+    "canvas": { "value": "{marketing-foundation.color.cream}", "type": "color" },
+    "surface": { "value": "{marketing-foundation.color.paper}", "type": "color" },
+    "raised": { "value": "{marketing-foundation.color.white}", "type": "color" },
+    "text": { "value": "{marketing-foundation.color.ink}", "type": "color" },
+    "text-muted": { "value": "#65616a", "type": "color" },
+    "line": { "value": "#d9cdc4", "type": "color" },
+    "primary-fill": { "value": "{marketing-foundation.color.orange}", "type": "color" },
+    "primary-foreground": { "value": "#cc4e00", "type": "color", "description": "Carrot UI primary step 11 for cream and white surfaces" },
+    "secondary-fill": { "value": "{marketing-foundation.color.mint}", "type": "color" },
+    "secondary-foreground": { "value": "#00885b", "type": "color", "description": "Carrot UI secondary step 11 for cream and white surfaces" },
+    "tertiary-fill": { "value": "{marketing-foundation.color.periwinkle}", "type": "color" },
+    "tertiary-foreground": { "value": "#4354c8", "type": "color", "description": "Carrot UI tertiary step 11 for cream and white surfaces" },
+    "positive-fill": { "value": "{marketing-light.secondary-fill}", "type": "color" },
+    "positive-foreground": { "value": "{marketing-light.secondary-foreground}", "type": "color" },
+    "contextual-fill": { "value": "{marketing-light.tertiary-fill}", "type": "color" },
+    "contextual-foreground": { "value": "{marketing-light.tertiary-foreground}", "type": "color" }
+  },
+  "marketing-dark": {
+    "canvas": { "value": "#101017", "type": "color" },
+    "surface": { "value": "#1a181d", "type": "color" },
+    "raised": { "value": "#232127", "type": "color" },
+    "text": { "value": "#f3f4f8", "type": "color" },
+    "text-muted": { "value": "#c9c9d1", "type": "color" },
+    "line": { "value": "#322f37", "type": "color" },
+    "primary-fill": { "value": "{marketing-foundation.color.orange}", "type": "color" },
+    "primary-foreground": { "value": "#ffa057", "type": "color", "description": "Carrot UI primary step 11 for dark surfaces" },
+    "secondary-fill": { "value": "{marketing-foundation.color.mint}", "type": "color" },
+    "secondary-foreground": { "value": "#85f9c5", "type": "color", "description": "Carrot UI secondary step 11 for dark surfaces" },
+    "tertiary-fill": { "value": "{marketing-foundation.color.periwinkle}", "type": "color" },
+    "tertiary-foreground": { "value": "#95afff", "type": "color", "description": "Carrot UI tertiary step 11 for dark surfaces" },
+    "positive-fill": { "value": "{marketing-dark.secondary-fill}", "type": "color" },
+    "positive-foreground": { "value": "{marketing-dark.secondary-foreground}", "type": "color" },
+    "contextual-fill": { "value": "{marketing-dark.tertiary-fill}", "type": "color" },
+    "contextual-foreground": { "value": "{marketing-dark.tertiary-foreground}", "type": "color" }
+  },
+  "marketing-typography": {
+    "display": { "value": { "fontFamily": "{marketing-foundation.font.sans}", "fontWeight": "700", "fontSize": "64", "lineHeight": "68", "letterSpacing": "-2.88" }, "type": "typography" },
+    "title": { "value": { "fontFamily": "{marketing-foundation.font.sans}", "fontWeight": "700", "fontSize": "48", "lineHeight": "54", "letterSpacing": "-1.68" }, "type": "typography" },
+    "section": { "value": { "fontFamily": "{marketing-foundation.font.sans}", "fontWeight": "700", "fontSize": "32", "lineHeight": "40", "letterSpacing": "-0.7" }, "type": "typography" },
+    "heading": { "value": { "fontFamily": "{marketing-foundation.font.sans}", "fontWeight": "700", "fontSize": "24", "lineHeight": "32", "letterSpacing": "-0.48" }, "type": "typography" },
+    "body-large": { "value": { "fontFamily": "{marketing-foundation.font.sans}", "fontWeight": "400", "fontSize": "20", "lineHeight": "28", "letterSpacing": "0" }, "type": "typography" },
+    "body": { "value": { "fontFamily": "{marketing-foundation.font.sans}", "fontWeight": "400", "fontSize": "16", "lineHeight": "24", "letterSpacing": "0" }, "type": "typography" },
+    "label": { "value": { "fontFamily": "{marketing-foundation.font.mono}", "fontWeight": "600", "fontSize": "16", "lineHeight": "18", "letterSpacing": "1.28" }, "type": "typography" }
+  },
+  "marketing-spacing": {
+    "1": { "value": "8", "type": "spacing" },
+    "2": { "value": "12", "type": "spacing" },
+    "3": { "value": "16", "type": "spacing" },
+    "4": { "value": "24", "type": "spacing" },
+    "5": { "value": "32", "type": "spacing" },
+    "6": { "value": "48", "type": "spacing" },
+    "card-padding": { "value": "16", "type": "spacing" },
+    "page-margin": { "value": "48", "type": "spacing" },
+    "radius-nested": { "value": "4", "type": "borderRadius", "description": "Nested Carrot UI card radius" },
+    "radius-outer": { "value": "8", "type": "borderRadius", "description": "Outer Carrot UI card radius" },
+    "radius-full": { "value": "9999", "type": "borderRadius", "description": "Pills and circular controls" }
   },
   "mauve-dark": {
     "step-1": {

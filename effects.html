@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Effects — CodeRabbit Brand System</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap">
+<link rel="stylesheet" href="styles.css?v=20260721-1">
+</head>
+<body>
+
+<nav class="left-nav">
+  <div class="left-nav-brand"><span>CR</span> Brand System</div>
+  <div class="left-nav-pages">
+    <a class="left-nav-page has-children" aria-expanded="false" href="marketing.html">Marketing</a>
+    <a class="left-nav-page has-children" aria-expanded="false" href="typography.html">Typography</a>
+    <a class="left-nav-page has-children" aria-expanded="false" href="colors.html">Colors</a>
+    <a class="left-nav-page has-children" aria-expanded="false" href="spacing.html">Spacing</a>
+    <a class="left-nav-page active has-children" href="effects.html" aria-current="page" aria-expanded="true">Effects</a>
+    <div class="left-nav-sections">
+      <a class="left-nav-section-link" href="#border-radius">Border Radius</a>
+      <a class="left-nav-section-link" href="#effects">Shadows & Effects</a>
+      <a class="left-nav-section-link" href="#motion">Motion & Easing</a>
+    </div>
+    <a class="left-nav-page has-children" aria-expanded="false" href="principles.html">Principles</a>
+  </div>
+</nav>
+
+
+<main class="main-content">
+
+<header class="page-header">
+  <div class="overline">CodeRabbit Brand System</div>
+  <h1 class="page-title">Effects</h1>
+  <p class="page-subtitle">Surface geometry, shadow tokens, easing curves, and animation durations.</p>
+</header>
+
+<!-- ─── Border Radius ─────────────────────────────────────────────── -->
+<section class="section" id="border-radius">
+  <div class="section-label">Border Radius</div>
+
+  <div class="radius-grid">
+    <div class="radius-cell">
+      <div class="radius-preview radius-preview--xs"></div>
+      <div class="radius-token">radius-xs</div>
+      <div class="radius-value">2px · fine details</div>
+    </div>
+    <div class="radius-cell">
+      <div class="radius-preview radius-preview--sm"></div>
+      <div class="radius-token">radius-sm</div>
+      <div class="radius-value">4px · nested cards, tags</div>
+    </div>
+    <div class="radius-cell">
+      <div class="radius-preview radius-preview--md"></div>
+      <div class="radius-token">radius-md</div>
+      <div class="radius-value">6px · buttons, inputs</div>
+    </div>
+    <div class="radius-cell">
+      <div class="radius-preview radius-preview--lg"></div>
+      <div class="radius-token">radius-lg</div>
+      <div class="radius-value">8px · outer cards, menus</div>
+    </div>
+    <div class="radius-cell">
+      <div class="radius-preview radius-preview--nested"><span></span></div>
+      <div class="radius-token">card nesting</div>
+      <div class="radius-value">8px outside · 4px inside</div>
+    </div>
+    <div class="radius-cell">
+      <div class="radius-preview radius-preview--full"></div>
+      <div class="radius-token">radius-full</div>
+      <div class="radius-value">9999px · avatars</div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── Shadows & Effects ─────────────────────────────────────────── -->
+<section class="section" id="effects">
+  <div class="section-label">Shadows &amp; Effects</div>
+
+  <div class="shadow-grid">
+    <div class="shadow-cell">
+      <div class="shadow-preview" style="box-shadow: inset 0 0 0 1px rgba(255,255,255,0.06);"></div>
+      <div class="shadow-token">--inset-shadow-cui-border</div>
+      <div class="shadow-value">inset 0 0 0 1px oklch(border-tint / 6%)</div>
+      <div style="font-size: 11px; color: var(--color-text-tertiary);">Subtle border on any surface — adapts between light and dark themes</div>
+    </div>
+    <div class="shadow-cell">
+      <div class="shadow-preview" style="box-shadow: inset 0 1px 0 0 rgba(255,255,255,0.12);"></div>
+      <div class="shadow-token">--inset-shadow-cui-button</div>
+      <div class="shadow-value">inset 0 1px 0 0 white / button-highlight-alpha</div>
+      <div style="font-size: 11px; color: var(--color-text-tertiary);">Top highlight on buttons — 40% in light, 12% in dark</div>
+    </div>
+    <div class="shadow-cell">
+      <div class="shadow-preview" style="box-shadow: inset 0 1px 0 0 rgba(255,255,255,0.15), inset 0 -1px 0 0 rgba(0,0,0,0.15);"></div>
+      <div class="shadow-token">--inset-shadow-cui-primary</div>
+      <div class="shadow-value">inset top highlight 15% + bottom shadow 15%</div>
+      <div style="font-size: 11px; color: var(--color-text-tertiary);">Primary CTA button depth — top gloss + bottom shadow</div>
+    </div>
+  </div>
+
+  <div class="note-box" style="margin-top: 24px;">
+    <strong>Inset shadow strategy:</strong> All shadows are inset box-shadows applied to the element itself, not drop shadows. This keeps them contained to the component boundary and avoids z-index conflicts in stacked UIs like the PR review panel.
+  </div>
+</section>
+
+
+<!-- ─── Motion & Easing ───────────────────────────────────────────── -->
+<section class="section" id="motion">
+  <div class="section-label">Motion &amp; Easing</div>
+
+  <div class="easing-grid">
+    <div class="easing-cell">
+      <svg class="easing-curve" viewBox="0 0 80 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M4 52 C44 52, 54 4, 76 4" stroke="#FF570A" stroke-width="1.5" fill="none"/>
+        <circle cx="4" cy="52" r="3" fill="#FF570A" opacity="0.4"/>
+        <circle cx="76" cy="4" r="3" fill="#FF570A" opacity="0.4"/>
+      </svg>
+      <div class="easing-token">--ease-cui-out-expo</div>
+      <div class="easing-value">cubic-bezier(0.19, 1, 0.22, 1)</div>
+      <div style="font-size: 11px; color: var(--color-text-tertiary); margin-top: 4px;">Entrances — fast settle</div>
+    </div>
+    <div class="easing-cell">
+      <svg class="easing-curve" viewBox="0 0 80 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M4 52 C4 4, 14 4, 76 4" stroke="#838BFF" stroke-width="1.5" fill="none"/>
+        <circle cx="4" cy="52" r="3" fill="#838BFF" opacity="0.4"/>
+        <circle cx="76" cy="4" r="3" fill="#838BFF" opacity="0.4"/>
+      </svg>
+      <div class="easing-token">--ease-cui-in-quad</div>
+      <div class="easing-value">cubic-bezier(0.55, 0.085, 0.68, 0.53)</div>
+      <div style="font-size: 11px; color: var(--color-text-tertiary); margin-top: 4px;">Exits — accelerate out</div>
+    </div>
+    <div class="easing-cell">
+      <svg class="easing-curve" viewBox="0 0 80 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M4 52 C36 52, 44 4, 76 4" stroke="#25E2A8" stroke-width="1.5" fill="none"/>
+        <circle cx="4" cy="52" r="3" fill="#25E2A8" opacity="0.4"/>
+        <circle cx="76" cy="4" r="3" fill="#25E2A8" opacity="0.4"/>
+      </svg>
+      <div class="easing-token">--ease-cui-out-cubic</div>
+      <div class="easing-value">cubic-bezier(0.215, 0.61, 0.355, 1)</div>
+      <div style="font-size: 11px; color: var(--color-text-tertiary); margin-top: 4px;">Default transitions</div>
+    </div>
+    <div class="easing-cell">
+      <svg class="easing-curve" viewBox="0 0 80 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M4 52 C4 52, 76 4, 76 4" stroke="var(--color-text-tertiary)" stroke-width="1.5" fill="none" stroke-dasharray="3,2"/>
+        <circle cx="4" cy="52" r="3" fill="var(--color-text-tertiary)" opacity="0.4"/>
+        <circle cx="76" cy="4" r="3" fill="var(--color-text-tertiary)" opacity="0.4"/>
+      </svg>
+      <div class="easing-token">--ease-cui-in-out-expo</div>
+      <div class="easing-value">cubic-bezier(1, 0, 0, 1)</div>
+      <div style="font-size: 11px; color: var(--color-text-tertiary); margin-top: 4px;">Sharp crossfades</div>
+    </div>
+    <div class="easing-cell">
+      <svg class="easing-curve" viewBox="0 0 80 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M4 52 C44 52, 76 28, 76 4" stroke="var(--color-text-tertiary)" stroke-width="1.5" fill="none"/>
+        <circle cx="4" cy="52" r="3" fill="var(--color-text-tertiary)" opacity="0.4"/>
+        <circle cx="76" cy="4" r="3" fill="var(--color-text-tertiary)" opacity="0.4"/>
+      </svg>
+      <div class="easing-token">--ease-cui-out-quart</div>
+      <div class="easing-value">cubic-bezier(0.165, 0.84, 0.44, 1)</div>
+      <div style="font-size: 11px; color: var(--color-text-tertiary); margin-top: 4px;">Panel slides</div>
+    </div>
+    <div class="easing-cell">
+      <svg class="easing-curve" viewBox="0 0 80 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M4 52 C4 28, 36 4, 76 4" stroke="var(--color-text-tertiary)" stroke-width="1.5" fill="none"/>
+        <circle cx="4" cy="52" r="3" fill="var(--color-text-tertiary)" opacity="0.4"/>
+        <circle cx="76" cy="4" r="3" fill="var(--color-text-tertiary)" opacity="0.4"/>
+      </svg>
+      <div class="easing-token">--ease-cui-out-circ</div>
+      <div class="easing-value">cubic-bezier(0.075, 0.82, 0.165, 1)</div>
+      <div style="font-size: 11px; color: var(--color-text-tertiary); margin-top: 4px;">Springy reveals</div>
+    </div>
+  </div>
+
+  <!-- Animation tokens -->
+  <div style="font-size: 10px; font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase; color: var(--color-text-tertiary); margin-bottom: 12px; padding-bottom: 8px; border-bottom: 1px solid var(--color-border-subtle);">Animation Tokens</div>
+  <div style="border: 1px solid var(--color-border); border-radius: var(--radius-cui-lg); overflow: hidden;">
+    <div class="anim-row" style="background: var(--color-bg-secondary);">
+      <div class="anim-name">--animate-cui-select-in</div>
+      <div class="anim-value">cui-select-in 200ms ease-out-expo</div>
+      <div class="anim-usage">Dropdown / popover open</div>
+    </div>
+    <div class="anim-row">
+      <div class="anim-name">--animate-cui-select-out</div>
+      <div class="anim-value">cui-select-out 150ms ease-in-quad</div>
+      <div class="anim-usage">Dropdown / popover close</div>
+    </div>
+    <div class="anim-row" style="background: var(--color-bg-secondary);">
+      <div class="anim-name">--animate-cui-shimmer</div>
+      <div class="anim-value">cui-shimmer 2s infinite linear</div>
+      <div class="anim-usage">Skeleton loading state</div>
+    </div>
+    <div class="anim-row">
+      <div class="anim-name">--animate-cui-shake</div>
+      <div class="anim-value">cui-shake 400ms ease-out-cubic</div>
+      <div class="anim-usage">Error / invalid input feedback</div>
+    </div>
+    <div class="anim-row" style="background: var(--color-bg-secondary); border-bottom: none;">
+      <div class="anim-name">--animate-cui-dot-cycle</div>
+      <div class="anim-value">cui-dot-cycle 1.2s steps(1) infinite</div>
+      <div class="anim-usage">Ellipsis loading indicator</div>
+    </div>
+  </div>
+
+  <div class="note-box" style="margin-top: 24px;">
+    <strong>Duration guidelines:</strong>
+    <ul>
+      <li>Micro interactions (hover, focus): <code>100–150ms</code></li>
+      <li>Element entrances (popover, menu): <code>200ms</code></li>
+      <li>Page transitions, panels: <code>250–350ms</code></li>
+      <li>Never animate beyond <code>400ms</code> for UI — use longer only for ambient / illustrative motion</li>
+    </ul>
+  </div>
+</section>
+
+
+
+
+<footer class="site-footer">
+  <div class="footer-brand"><span>CR</span> Design System</div>
+  <div class="footer-meta">Geist Variable · Hack Nerd Font · OKLCH Mauve Scale · 4px Grid</div>
+</footer>
+
+</main>
+
+
+<script>
+(function() {
+  var links = document.querySelectorAll('.left-nav-section-link');
+  var sections = [];
+  links.forEach(function(a) {
+    var id = a.getAttribute('href').replace('#','');
+    var el = document.getElementById(id);
+    if (el) sections.push({ el: el, a: a });
+  });
+  if (!sections.length) return;
+  if (sections[0]) sections[0].a.classList.add('active');
+  var io = new IntersectionObserver(function(entries) {
+    entries.forEach(function(entry) {
+      if (!entry.isIntersecting) return;
+      links.forEach(function(l) { l.classList.remove('active'); });
+      var match = sections.find(function(s) { return s.el === entry.target; });
+      if (match) match.a.classList.add('active');
+    });
+  }, { rootMargin: '-10% 0px -80% 0px' });
+  sections.forEach(function(s) { io.observe(s.el); });
+})();
+</script>
+</body>
+</html>

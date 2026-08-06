@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Marketing System — CodeRabbit Brand System</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap">
+<link rel="stylesheet" href="styles.css?v=20260721-1">
+</head>
+<body>
+
+<nav class="left-nav" aria-label="Brand system">
+  <div class="left-nav-brand"><span>CR</span> Brand System</div>
+  <div class="left-nav-pages">
+    <a class="left-nav-page active has-children" href="marketing.html" aria-current="page" aria-expanded="true">Marketing</a>
+    <div class="left-nav-sections">
+      <a class="left-nav-section-link" href="#boundary">System Boundary</a>
+      <a class="left-nav-section-link" href="#themes">Marketing Themes</a>
+      <a class="left-nav-section-link" href="#foundation">Foundation Tokens</a>
+      <a class="left-nav-section-link" href="#roles">Artifact Roles</a>
+      <a class="left-nav-section-link" href="#governance">Governance</a>
+    </div>
+    <a class="left-nav-page has-children" aria-expanded="false" href="typography.html">Typography</a>
+    <a class="left-nav-page has-children" aria-expanded="false" href="colors.html">Colors</a>
+    <a class="left-nav-page has-children" aria-expanded="false" href="spacing.html">Spacing</a>
+    <a class="left-nav-page has-children" aria-expanded="false" href="effects.html">Effects</a>
+    <a class="left-nav-page has-children" aria-expanded="false" href="principles.html">Principles</a>
+  </div>
+</nav>
+
+<main class="main-content">
+  <header class="page-header">
+    <div class="overline">CodeRabbit Brand System</div>
+    <h1 class="page-title">Marketing system</h1>
+    <p class="page-subtitle">A semantic extension for decks, one-pagers, sales collateral, pitches, campaigns, and documents.</p>
+  </header>
+
+  <section class="section" id="boundary">
+    <div class="section-label">One foundation, two systems</div>
+    <div class="system-boundary">
+      <article class="system-boundary-card">
+        <div class="system-boundary-label">Product UI</div>
+        <h3>Carrot UI</h3>
+        <p>Components, interaction states, dense application layouts, and accessible light/dark interface semantics.</p>
+      </article>
+      <article class="system-boundary-card marketing">
+        <div class="system-boundary-label">Marketing expression</div>
+        <h3>CodeRabbit Marketing</h3>
+        <p>Editorial hierarchy, cream-led storytelling, presentation canvases, printed pages, campaign surfaces, and proof.</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="section" id="themes">
+    <div class="section-label">Marketing themes</div>
+    <div class="theme-toolbar">
+      <p class="theme-toolbar-copy">The content remains structurally identical while semantic surface roles change.</p>
+      <div class="theme-toggle" role="group" aria-label="Marketing preview theme">
+        <button type="button" data-preview-theme="light" aria-pressed="true">Cream light</button>
+        <button type="button" data-preview-theme="dark" aria-pressed="false">Ink dark</button>
+      </div>
+    </div>
+
+    <div class="marketing-preview" id="marketing-preview" data-marketing-theme="light">
+      <div class="marketing-eyebrow">Code review for the AI era</div>
+      <h2>Ship faster without lowering the bar.</h2>
+      <p class="marketing-lede">CodeRabbit gives every pull request a context-aware review before it reaches your team.</p>
+      <div class="marketing-proof-grid">
+        <article class="marketing-proof-card">
+          <strong>10×</strong>
+          <span>Primary step 11 carries brand emphasis over cream and white.</span>
+        </article>
+        <article class="marketing-proof-card">
+          <strong>Signal</strong>
+          <span>Secondary step 11 carries positive outcomes and supporting proof.</span>
+        </article>
+        <article class="marketing-proof-card">
+          <strong>Context</strong>
+          <span>Tertiary step 11 separates systems, methods, and contextual ideas.</span>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="foundation">
+    <div class="section-label">Foundation tokens</div>
+    <div class="marketing-token-grid">
+      <div class="marketing-token">
+        <span class="marketing-swatch" style="background:var(--marketing-ink)"></span>
+        <div><div class="marketing-token-name">marketing.color.ink</div><div class="marketing-token-role">Primary dark canvas and light-theme text</div></div>
+      </div>
+      <div class="marketing-token">
+        <span class="marketing-swatch" style="background:var(--marketing-cream)"></span>
+        <div><div class="marketing-token-name">marketing.color.cream</div><div class="marketing-token-role">Canonical marketing light canvas</div></div>
+      </div>
+      <div class="marketing-token">
+        <span class="marketing-swatch" style="background:var(--marketing-paper)"></span>
+        <div><div class="marketing-token-name">marketing.color.paper</div><div class="marketing-token-role">Quiet inset sections and print surfaces</div></div>
+      </div>
+      <div class="marketing-token">
+        <span class="marketing-swatch" style="background:var(--marketing-white)"></span>
+        <div><div class="marketing-token-name">marketing.color.raised</div><div class="marketing-token-role">Raised cards on cream</div></div>
+      </div>
+      <div class="marketing-token">
+        <span class="marketing-swatch" style="background:var(--marketing-orange)"></span>
+        <div><div class="marketing-token-name">marketing.color.orange</div><div class="marketing-token-role">Primary fills, rules, and calls to action</div></div>
+      </div>
+      <div class="marketing-token">
+        <span class="marketing-swatch" style="background:var(--marketing-mint)"></span>
+        <div><div class="marketing-token-name">marketing.color.mint</div><div class="marketing-token-role">Positive proof and outcome fills</div></div>
+      </div>
+      <div class="marketing-token">
+        <span class="marketing-swatch" style="background:var(--marketing-periwinkle)"></span>
+        <div><div class="marketing-token-name">marketing.color.periwinkle</div><div class="marketing-token-role">Systems, methods, and secondary fills</div></div>
+      </div>
+      <div class="marketing-token">
+        <span class="marketing-swatch" style="background:var(--marketing-yellow)"></span>
+        <div><div class="marketing-token-name">marketing.color.yellow</div><div class="marketing-token-role">Rare highlight and attention moments</div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="roles">
+    <div class="section-label">Artifact roles</div>
+    <div class="role-grid">
+      <article class="role-card">
+        <h3>Canvas and surface</h3>
+        <p><code>canvas</code>, <code>surface</code>, and <code>raised</code> replace raw palette references so the same artifact can move between cream and ink.</p>
+      </article>
+      <article class="role-card">
+        <h3>Editorial typography</h3>
+        <p>Display 64/68, title 48/54, section 32/40, heading 24/32, body 20/28 and 16/24. Hack is reserved for labels and metrics.</p>
+      </article>
+      <article class="role-card">
+        <h3>Contrast-bearing accents</h3>
+        <p>Cream and white use darker primary, secondary, and tertiary step 11 foregrounds. Ink surfaces use their lighter dark-theme counterparts; step 9 remains the fill.</p>
+      </article>
+      <article class="role-card">
+        <h3>Presentation spacing</h3>
+        <p>An 8–48 px role scale supports page margins, editorial rhythm, card padding, grids, and fixed-canvas composition.</p>
+      </article>
+      <article class="role-card">
+        <h3>Product evidence</h3>
+        <p>Product screenshots and UI previews retain Carrot UI semantics inside a marketing composition; the surrounding story uses marketing roles.</p>
+      </article>
+      <article class="role-card">
+        <h3>Format profiles</h3>
+        <p>Deck, one-pager, document, web campaign, and print profiles inherit the same tokens but set their own canvas size and density.</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="section" id="governance">
+    <div class="section-label">Governance</div>
+    <div class="governance-list">
+      <div class="governance-item"><div class="governance-number">01</div><div><strong>Carrot UI owns product behavior.</strong><p>Do not copy marketing values back into application components or interaction states.</p></div></div>
+      <div class="governance-item"><div class="governance-number">02</div><div><strong>Marketing owns editorial expression.</strong><p>Use semantic artifact roles instead of hard-coding cream, ink, or accent scale steps.</p></div></div>
+      <div class="governance-item"><div class="governance-number">03</div><div><strong>Color-family names stay literal.</strong><p>Use orange, mint, and periwinkle in foundations; primary, secondary, and tertiary belong in the semantic layer.</p></div></div>
+      <div class="governance-item"><div class="governance-number">04</div><div><strong>Theme parity is required.</strong><p>Every canonical template must render and pass contrast review in both cream-light and ink-dark modes.</p></div></div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="footer-brand"><span>CR</span> Brand System</div>
+    <div class="footer-meta">Marketing foundation · July 2026</div>
+  </footer>
+</main>
+
+<script>
+  const preview = document.getElementById('marketing-preview');
+  const themeButtons = document.querySelectorAll('[data-preview-theme]');
+
+  themeButtons.forEach((button) => {
+    button.addEventListener('click', () => {
+      const theme = button.dataset.previewTheme;
+      preview.dataset.marketingTheme = theme;
+      themeButtons.forEach((candidate) => {
+        candidate.setAttribute('aria-pressed', String(candidate === button));
+      });
+    });
+  });
+</script>
+</body>
+</html>

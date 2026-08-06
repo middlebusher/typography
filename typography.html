@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Typography — CodeRabbit Brand System</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap">
+<link rel="stylesheet" href="styles.css?v=20260805-1">
+</head>
+<body>
+
+<nav class="left-nav">
+  <div class="left-nav-brand"><span>CR</span> Brand System</div>
+  <div class="left-nav-pages">
+    <a class="left-nav-page has-children" aria-expanded="false" href="marketing.html">Marketing</a>
+    <a class="left-nav-page active has-children" href="typography.html" aria-current="page" aria-expanded="true">Typography</a>
+    <div class="left-nav-sections">
+      <a class="left-nav-section-link" href="#typography">Font Families</a>
+      <a class="left-nav-section-link" href="#font-weights">Font Weights</a>
+      <a class="left-nav-section-link" href="#title-scale">Title Scale</a>
+      <a class="left-nav-section-link" href="#text-scale">Text Scale</a>
+      <a class="left-nav-section-link" href="#in-use">In-Use Combinations</a>
+    </div>
+    <a class="left-nav-page has-children" aria-expanded="false" href="colors.html">Colors</a>
+    <a class="left-nav-page has-children" aria-expanded="false" href="spacing.html">Spacing</a>
+    <a class="left-nav-page has-children" aria-expanded="false" href="effects.html">Effects</a>
+    <a class="left-nav-page has-children" aria-expanded="false" href="principles.html">Principles</a>
+  </div>
+</nav>
+
+
+<main class="main-content">
+
+<header class="page-header">
+  <div class="overline">CodeRabbit Brand System</div>
+  <h1 class="page-title">Typography</h1>
+  <p class="page-subtitle">Shared type primitives for product UI, marketing, and editorial artifacts.</p>
+</header>
+
+<!-- ─── Font Families ───────────────────────────────────────────── -->
+<section class="section" id="typography">
+  <div class="section-label">Font Families</div>
+
+  <div class="font-families">
+    <div class="font-family-card">
+      <div class="font-family-sample" style="font-family: var(--font-regular);">Geist Sans</div>
+      <div class="font-family-name">Primary / Regular</div>
+      <div class="font-family-token">--font-regular</div>
+      <div class="font-family-stack">All UI text, headings, body copy</div>
+    </div>
+    <div class="font-family-card">
+      <div class="font-family-sample" style="font-family: var(--font-monospace); font-weight: 400; font-size: 22px;">Hack Nerd Font</div>
+      <div class="font-family-name">Monospace / Code</div>
+      <div class="font-family-token">--font-monospace</div>
+      <div class="font-family-stack">Code blocks, tokens, technical strings</div>
+    </div>
+  </div>
+
+  <div class="note-box">
+    <strong>Figma setup:</strong>
+    <ul>
+      <li>Geist Sans — free from <strong>fonts.google.com/specimen/Geist</strong> or vercel.com/font</li>
+      <li>Hack Nerd Font — free from <strong>github.com/ryanoasis/nerd-fonts</strong> (install locally)</li>
+      <li>Geist is a variable font supporting weights 100–900; values like 500, 600, 700 work in Figma with Geist selected</li>
+    </ul>
+  </div>
+</section>
+
+
+<!-- ─── Font Weights ─────────────────────────────────────────────── -->
+<section class="section" id="font-weights">
+  <div class="section-label">Font Weights — Geist Variable Axis Values</div>
+
+  <div class="weight-grid">
+    <div class="weight-cell">
+      <div class="weight-sample" style="font-weight: 300;">CodeRabbit</div>
+      <div class="weight-label">Light</div>
+      <div class="weight-value">300</div>
+    </div>
+    <div class="weight-cell">
+      <div class="weight-sample" style="font-weight: 400;">CodeRabbit</div>
+      <div class="weight-label">Normal</div>
+      <div class="weight-value">400</div>
+    </div>
+    <div class="weight-cell">
+      <div class="weight-sample" style="font-weight: 500;">CodeRabbit</div>
+      <div class="weight-label">Medium</div>
+      <div class="weight-value">500</div>
+    </div>
+    <div class="weight-cell">
+      <div class="weight-sample" style="font-weight: 600;">CodeRabbit</div>
+      <div class="weight-label">Semibold</div>
+      <div class="weight-value">600</div>
+    </div>
+    <div class="weight-cell">
+      <div class="weight-sample" style="font-weight: 700;">CodeRabbit</div>
+      <div class="weight-label">Bold</div>
+      <div class="weight-value">700</div>
+    </div>
+  </div>
+
+  <div class="note-box">
+    <strong>Variable font axis values:</strong> 500, 600, and 700 work because Geist is a variable font with a continuous weight axis (100–900). In Figma, manually type the number in the weight field after selecting Geist.
+  </div>
+</section>
+
+
+<!-- ─── Title Scale ──────────────────────────────────────────────── -->
+<section class="section" id="title-scale">
+  <div class="section-label">Title Scale — Semibold 600 · Geist</div>
+
+  <div class="type-row">
+    <div class="type-sample"><span class="t9">AI code review</span></div>
+    <div class="type-meta">
+      <div class="meta-token">--title-9</div>
+      <div class="meta-row">
+        <span class="meta-pill highlight">72px · 4.5rem</span>
+        <span class="meta-pill">weight 600</span>
+        <span class="meta-pill">lh 1.0</span>
+        <span class="meta-pill">ls −2.2%</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="type-row">
+    <div class="type-sample"><span class="t8">AI code review</span></div>
+    <div class="type-meta">
+      <div class="meta-token">--title-8</div>
+      <div class="meta-row">
+        <span class="meta-pill highlight">64px · 4rem</span>
+        <span class="meta-pill">weight 600</span>
+        <span class="meta-pill">lh 1.06</span>
+        <span class="meta-pill">ls −2.2%</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="type-row">
+    <div class="type-sample"><span class="t7">AI code review</span></div>
+    <div class="type-meta">
+      <div class="meta-token">--title-7</div>
+      <div class="meta-row">
+        <span class="meta-pill highlight">56px · 3.5rem</span>
+        <span class="meta-pill">weight 600</span>
+        <span class="meta-pill">lh 1.1</span>
+        <span class="meta-pill">ls −2.2%</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="type-row">
+    <div class="type-sample"><span class="t6">AI code review</span></div>
+    <div class="type-meta">
+      <div class="meta-token">--title-6</div>
+      <div class="meta-row">
+        <span class="meta-pill highlight">48px · 3rem</span>
+        <span class="meta-pill">weight 600</span>
+        <span class="meta-pill">lh 1.0</span>
+        <span class="meta-pill">ls −2.2%</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="type-row">
+    <div class="type-sample"><span class="t5">AI code review</span></div>
+    <div class="type-meta">
+      <div class="meta-token">--title-5</div>
+      <div class="meta-row">
+        <span class="meta-pill highlight">40px · 2.5rem</span>
+        <span class="meta-pill">weight 600</span>
+        <span class="meta-pill">lh 1.1</span>
+        <span class="meta-pill">ls −2.2%</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="type-row">
+    <div class="type-sample"><span class="t4">AI code review</span></div>
+    <div class="type-meta">
+      <div class="meta-token">--title-4</div>
+      <div class="meta-row">
+        <span class="meta-pill highlight">32px · 2rem</span>
+        <span class="meta-pill">weight 600</span>
+        <span class="meta-pill">lh 1.125</span>
+        <span class="meta-pill">ls −2.2%</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="type-row">
+    <div class="type-sample"><span class="t3">AI code review</span></div>
+    <div class="type-meta">
+      <div class="meta-token">--title-3</div>
+      <div class="meta-row">
+        <span class="meta-pill highlight">24px · 1.5rem</span>
+        <span class="meta-pill">weight 600</span>
+        <span class="meta-pill">lh 1.33</span>
+        <span class="meta-pill">ls −1.2%</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="type-row">
+    <div class="type-sample"><span class="t2">AI code review</span></div>
+    <div class="type-meta">
+      <div class="meta-token">--title-2</div>
+      <div class="meta-row">
+        <span class="meta-pill highlight">20px · 1.25rem</span>
+        <span class="meta-pill">weight 600</span>
+        <span class="meta-pill">lh 1.33</span>
+        <span class="meta-pill">ls −1.2%</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="type-row">
+    <div class="type-sample"><span class="t1">AI code review</span></div>
+    <div class="type-meta">
+      <div class="meta-token">--title-1</div>
+      <div class="meta-row">
+        <span class="meta-pill highlight">17px · 1.0625rem</span>
+        <span class="meta-pill">weight 600</span>
+        <span class="meta-pill">lh 1.4</span>
+        <span class="meta-pill">ls −1.2%</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ─── Text Scale ───────────────────────────────────────────────── -->
+<section class="section" id="text-scale">
+  <div class="section-label">Text Scale — Regular 400 · Geist</div>
+
+  <div class="type-row">
+    <div class="type-sample">
+      <span class="text-large">CodeRabbit is an AI-powered code review tool that helps teams ship better software, faster. Automated reviews, actionable feedback, and deep context on every pull request.</span>
+    </div>
+    <div class="type-meta">
+      <div class="meta-token">--text-large</div>
+      <div class="meta-row">
+        <span class="meta-pill highlight">17px · 1.0625rem</span>
+        <span class="meta-pill">weight 400</span>
+        <span class="meta-pill">lh 1.6</span>
+        <span class="meta-pill">ls 0%</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="type-row">
+    <div class="type-sample">
+      <span class="text-regular">CodeRabbit is an AI-powered code review tool that helps teams ship better software, faster. Automated reviews, actionable feedback, and deep context on every pull request.</span>
+    </div>
+    <div class="type-meta">
+      <div class="meta-token">--text-regular</div>
+      <div class="meta-row">
+        <span class="meta-pill highlight">15px · 0.9375rem</span>
+        <span class="meta-pill">weight 400</span>
+        <span class="meta-pill">lh 1.6</span>
+        <span class="meta-pill">ls +0.5%</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="type-row">
+    <div class="type-sample">
+      <span class="text-small">CodeRabbit is an AI-powered code review tool that helps teams ship better software, faster. Automated reviews, actionable feedback, and deep context on every pull request.</span>
+    </div>
+    <div class="type-meta">
+      <div class="meta-token">--text-small</div>
+      <div class="meta-row">
+        <span class="meta-pill highlight">14px · 0.875rem</span>
+        <span class="meta-pill">weight 400</span>
+        <span class="meta-pill">lh 1.5</span>
+        <span class="meta-pill">ls +1.0%</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="type-row">
+    <div class="type-sample">
+      <span class="text-mini">CodeRabbit is an AI-powered code review tool that helps teams ship better software, faster. Automated reviews, actionable feedback, and deep context on every pull request.</span>
+    </div>
+    <div class="type-meta">
+      <div class="meta-token">--text-mini</div>
+      <div class="meta-row">
+        <span class="meta-pill highlight">13px · 0.8125rem</span>
+        <span class="meta-pill">weight 400</span>
+        <span class="meta-pill">lh 1.5</span>
+        <span class="meta-pill">ls +1.5%</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="type-row">
+    <div class="type-sample">
+      <span class="text-micro">CodeRabbit is an AI-powered code review tool that helps teams ship better software, faster. Automated reviews, actionable feedback, and deep context on every pull request.</span>
+    </div>
+    <div class="type-meta">
+      <div class="meta-token">--text-micro</div>
+      <div class="meta-row">
+        <span class="meta-pill highlight">12px · 0.75rem</span>
+        <span class="meta-pill">weight 400</span>
+        <span class="meta-pill">lh 1.4</span>
+        <span class="meta-pill">ls +2.0%</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="type-row">
+    <div class="type-sample">
+      <span class="text-tiny">CodeRabbit is an AI-powered code review tool that helps teams ship better software, faster. Automated reviews, actionable feedback, and deep context on every pull request.</span>
+    </div>
+    <div class="type-meta">
+      <div class="meta-token">--text-tiny</div>
+      <div class="meta-row">
+        <span class="meta-pill highlight">10px · 0.625rem</span>
+        <span class="meta-pill">weight 400</span>
+        <span class="meta-pill">lh 1.3</span>
+        <span class="meta-pill">ls +3.0%</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ─── In-Use Combinations ──────────────────────────────────────── -->
+<section class="section" id="in-use">
+  <div class="section-label">In-Use Combinations</div>
+  <div class="type-combinations" aria-label="CodeRabbit typography combinations from Figma">
+    <div class="type-combinations-main">
+      <article class="type-lockup type-lockup--hero">
+        <h2>Cut code review time &amp; bugs in half. Instantly.</h2>
+        <p>Reviews for AI-powered teams who move fast (but don’t break things)</p>
+      </article>
+
+      <article class="type-lockup type-lockup--feature">
+        <div class="type-eyebrow">CR_Eyebrow</div>
+        <h3>Faster reviews +<br>better code.</h3>
+        <p>We do the heavy lifting &amp; spot the hard to find issues. You do the final 10%.</p>
+      </article>
+
+      <article class="type-lockup type-lockup--editorial">
+        <div class="type-eyebrow">CR_Eyebrow</div>
+        <h3>Code reviews were hard before. Now, they feel impossible.</h3>
+        <p>Your team moves fast with AI. But fast shouldn’t mean sloppy. We make sure every line still earns its merge.</p>
+      </article>
+
+      <article class="type-lockup type-lockup--body">
+        <h3>CodeRabbit learnings</h3>
+        <p>Give our AI agent feedback in natural language and it takes that into account in future reviews.</p>
+      </article>
+
+      <article class="type-lockup type-lockup--mono">
+        <h3>SOC 2 Type II certified</h3>
+        <p>Give our AI agent feedback in natural language and it takes that into account in future reviews.</p>
+      </article>
+    </div>
+
+    <div class="type-combinations-aside">
+      <div class="learning-card learning-card--orange">
+        <h3><span>CodeRabbit</span> learnings</h3>
+        <p>Give our AI agent feedback in natural language and it takes that into account in future reviews.</p>
+      </div>
+      <div class="learning-card learning-card--mint">
+        <h3><span>CodeRabbit</span> learnings</h3>
+        <p>Give our AI agent feedback in natural language and it takes that into account in future reviews.</p>
+      </div>
+      <div class="learning-card learning-card--periwinkle">
+        <h3><span>CodeRabbit</span> learnings</h3>
+        <p>Give our AI agent feedback in natural language and it takes that into account in future reviews.</p>
+      </div>
+
+      <div class="type-action-stack" aria-label="Accent color link examples">
+        <div class="type-action-row type-action-row--orange"><span>Read case study</span><span>PR 1</span><span>PR 2</span></div>
+        <div class="type-action-row type-action-row--mint"><span>Read case study</span><span>PR 1</span><span>PR 2</span></div>
+        <div class="type-action-row type-action-row--periwinkle"><span>Read case study</span><span>PR 1</span><span>PR 2</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<footer class="site-footer">
+  <div class="footer-brand"><span>CR</span> Design System</div>
+  <div class="footer-meta">Geist Variable · Hack Nerd Font · OKLCH Mauve Scale · 4px Grid</div>
+</footer>
+
+</main>
+
+
+<script>
+(function() {
+  var links = document.querySelectorAll('.left-nav-section-link');
+  var sections = [];
+  links.forEach(function(a) {
+    var id = a.getAttribute('href').replace('#','');
+    var el = document.getElementById(id);
+    if (el) sections.push({ el: el, a: a });
+  });
+  if (!sections.length) return;
+  if (sections[0]) sections[0].a.classList.add('active');
+  var io = new IntersectionObserver(function(entries) {
+    entries.forEach(function(entry) {
+      if (!entry.isIntersecting) return;
+      links.forEach(function(l) { l.classList.remove('active'); });
+      var match = sections.find(function(s) { return s.el === entry.target; });
+      if (match) match.a.classList.add('active');
+    });
+  }, { rootMargin: '-10% 0px -80% 0px' });
+  sections.forEach(function(s) { io.observe(s.el); });
+})();
+</script>
+</body>
+</html>
